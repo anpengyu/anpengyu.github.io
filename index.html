@@ -74,9 +74,13 @@
     <article id="post-第一篇博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2020-12-15T06:52:46.000Z" itemprop="datePublished">2020-12-15</time>
+  <time class="dt-published" datetime="2020-12-15T06:52:46.470Z" itemprop="datePublished">2020-12-15</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/">项目案例</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -85,7 +89,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo+github创建个人博客</a>
+      <a class="p-name article-title" href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo+github搭建个人博客</a>
     </h1>
   
 
@@ -93,43 +97,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="1-软件安装"><a href="#1-软件安装" class="headerlink" title="1.软件安装"></a>1.软件安装</h1><h2 id="1-1-下载并安装-node-js"><a href="#1-1-下载并安装-node-js" class="headerlink" title="1.1 下载并安装 node.js"></a>1.1 下载并安装 node.js</h2><h3 id="1-1-1-下载地址"><a href="#1-1-1-下载地址" class="headerlink" title="1.1.1 下载地址"></a>1.1.1 下载地址</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;</span><br></pre></td></tr></table></figure>
-<h3 id="1-1-2-安装后验证"><a href="#1-1-2-安装后验证" class="headerlink" title="1.1.2 安装后验证"></a>1.1.2 安装后验证</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-<h2 id="1-2-安装-cnpm"><a href="#1-2-安装-cnpm" class="headerlink" title="1.2 安装 cnpm"></a>1.2 安装 cnpm</h2><h3 id="1-2-1-安装命令"><a href="#1-2-1-安装命令" class="headerlink" title="1.2.1 安装命令"></a>1.2.1 安装命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<h3 id="1-2-2-安装后验证-cnpm"><a href="#1-2-2-安装后验证-cnpm" class="headerlink" title="1.2.2 安装后验证 cnpm"></a>1.2.2 安装后验证 cnpm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-<h2 id="1-3-安装-hexo"><a href="#1-3-安装-hexo" class="headerlink" title="1.3 安装 hexo"></a>1.3 安装 hexo</h2><h3 id="1-3-1-安装命令"><a href="#1-3-1-安装命令" class="headerlink" title="1.3.1 安装命令"></a>1.3.1 安装命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h3 id="1-3-2-安装后验证-hexo"><a href="#1-3-2-安装后验证-hexo" class="headerlink" title="1.3.2 安装后验证 hexo"></a>1.3.2 安装后验证 hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<h1 id="2-使用-hexo-搭建-blog"><a href="#2-使用-hexo-搭建-blog" class="headerlink" title="2.使用 hexo 搭建 blog"></a>2.使用 hexo 搭建 blog</h1><h2 id="2-1-创建一个空白-dir-并进入到该-dir-比如"><a href="#2-1-创建一个空白-dir-并进入到该-dir-比如" class="headerlink" title="2.1 创建一个空白 dir, 并进入到该 dir, 比如"></a>2.1 创建一个空白 dir, 并进入到该 dir, 比如</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zx-hexo</span><br></pre></td></tr></table></figure>
-<h2 id="2-2-在-zx-hexo-目录下-初始化-blog"><a href="#2-2-在-zx-hexo-目录下-初始化-blog" class="headerlink" title="2.2 在 zx-hexo 目录下, 初始化 blog"></a>2.2 在 zx-hexo 目录下, 初始化 blog</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<h2 id="2-3-本地启动-blog-主要是本地预览文章用-按下-ctrl-c-即可停止"><a href="#2-3-本地启动-blog-主要是本地预览文章用-按下-ctrl-c-即可停止" class="headerlink" title="2.3 本地启动 blog, 主要是本地预览文章用 (按下 ctrl+c 即可停止)"></a>2.3 本地启动 blog, 主要是本地预览文章用 (按下 ctrl+c 即可停止)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>使用下述网址即可访问本地部署的 hexo 博客</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost:4000</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-4-在-zx-hexo-目录下-安装上传图片到-github-的插件"><a href="#2-4-在-zx-hexo-目录下-安装上传图片到-github-的插件" class="headerlink" title="2.4 在 zx-hexo 目录下, 安装上传图片到 github 的插件"></a>2.4 在 zx-hexo 目录下, 安装上传图片到 github 的插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-<p>同时修改 zx-hexo 目录下, _config.yml文件配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder:true</span><br></pre></td></tr></table></figure>
-<h2 id="2-5-在-zx-hexo-目录下执行命令-‘hexo-n’新建一篇-blog-进入该blog目录-并用-md-工具比如-typora-编辑该文章"><a href="#2-5-在-zx-hexo-目录下执行命令-‘hexo-n’新建一篇-blog-进入该blog目录-并用-md-工具比如-typora-编辑该文章" class="headerlink" title="2.5 在 zx-hexo 目录下执行命令 ‘hexo n’新建一篇 blog, 进入该blog目录, 并用 md 工具比如(typora) 编辑该文章"></a>2.5 在 zx-hexo 目录下执行命令 ‘hexo n’新建一篇 blog, 进入该blog目录, 并用 md 工具比如(typora) 编辑该文章</h2><p>E:\Programming\zx-hexo&gt;hexo n “使用hexo搭建个人博客”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: E:\Programming\zx-hexo\source_posts\使用hexo搭建个人博客.md</span><br><span class="line">&gt;&gt; 可以发现该source目录下被新建了一个 文件及文件夹</span><br><span class="line">使用hexo搭建个人博客.md</span><br><span class="line">使用hexo搭建个人博客</span><br><span class="line">&gt;&gt; 在该文件中存放图片, 并在 md文件中引用即可</span><br><span class="line">&lt;img src&#x3D;&quot;使用hexo搭建个人博客&#x2F;xunlei.png&quot; style&#x3D;&quot;zoom:50%;&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="2-6-然后重新回到-zx-hexo-目录-清理一下目录"><a href="#2-6-然后重新回到-zx-hexo-目录-清理一下目录" class="headerlink" title="2.6 然后重新回到 zx-hexo 目录, 清理一下目录"></a>2.6 然后重新回到 zx-hexo 目录, 清理一下目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<h2 id="2-7-重新生成"><a href="#2-7-重新生成" class="headerlink" title="2.7 重新生成"></a>2.7 重新生成</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<h2 id="2-8-再次重启-预览即可看到"><a href="#2-8-再次重启-预览即可看到" class="headerlink" title="2.8 再次重启, 预览即可看到"></a>2.8 再次重启, 预览即可看到</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s </span><br></pre></td></tr></table></figure>
-<h1 id="3-将-blog-部署到-github-个人主页上"><a href="#3-将-blog-部署到-github-个人主页上" class="headerlink" title="3.将 blog 部署到 github 个人主页上"></a>3.将 blog 部署到 github 个人主页上</h1><h2 id="3-1-在-zx-hexo-目录下安装-hexo-deployer-git"><a href="#3-1-在-zx-hexo-目录下安装-hexo-deployer-git" class="headerlink" title="3.1 在 zx-hexo 目录下安装 hexo-deployer-git"></a>3.1 在 zx-hexo 目录下安装 hexo-deployer-git</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<h2 id="3-2-编辑-zx-hexo-目录下的-config-yml-文件-在文件末尾添加如下内容"><a href="#3-2-编辑-zx-hexo-目录下的-config-yml-文件-在文件末尾添加如下内容" class="headerlink" title="3.2 编辑 zx-hexo 目录下的 _config.yml 文件, 在文件末尾添加如下内容"></a>3.2 编辑 zx-hexo 目录下的 _config.yml 文件, 在文件末尾添加如下内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;abc&#x2F;abc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>其中 repo 中的内容即为 github 个人主页链接地址, 关于如何创建 github 个人主页, 可自行百度即可</p>
-<h2 id="3-3-在-zx-hexo-目录下-将本地-blog-推送到-git-仓-可能需要输入-username-amp-pwd"><a href="#3-3-在-zx-hexo-目录下-将本地-blog-推送到-git-仓-可能需要输入-username-amp-pwd" class="headerlink" title="3.3 在 zx-hexo 目录下, 将本地 blog 推送到 git 仓, 可能需要输入 username &amp; pwd"></a>3.3 在 zx-hexo 目录下, 将本地 blog 推送到 git 仓, 可能需要输入 username &amp; pwd</h2><p>hexo d</p>
-<h2 id="3-4-推送成功后-在浏览器中输入对应域名-即可访问"><a href="#3-4-推送成功后-在浏览器中输入对应域名-即可访问" class="headerlink" title="3.4 推送成功后, 在浏览器中输入对应域名, 即可访问"></a>3.4 推送成功后, 在浏览器中输入对应域名, 即可访问</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;abc.github.io</span><br></pre></td></tr></table></figure>
-<h1 id="4-更换主题"><a href="#4-更换主题" class="headerlink" title="4.更换主题"></a>4.更换主题</h1><h2 id="4-1-假设要更换的主题是-maupassant"><a href="#4-1-假设要更换的主题是-maupassant" class="headerlink" title="4.1 假设要更换的主题是 maupassant"></a>4.1 假设要更换的主题是 maupassant</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.haomwei.com&#x2F;technology&#x2F;maupassant-hexo.html</span><br></pre></td></tr></table></figure>
-<h2 id="4-2-在-zx-hexo-目录下-依次执行命令"><a href="#4-2-在-zx-hexo-目录下-依次执行命令" class="headerlink" title="4.2 在 zx-hexo 目录下, 依次执行命令:"></a>4.2 在 zx-hexo 目录下, 依次执行命令:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;tufu9441&#x2F;maupassant-hexo.git themes&#x2F;maupassant</span><br><span class="line">cnpm install hexo-renderer-pug --save</span><br><span class="line">cnpm install hexo-renderer-sass --save</span><br></pre></td></tr></table></figure>
-<h2 id="4-3-编辑-zx-hexo-目录下的-config-yml-文件-将theme的值改为maupassant"><a href="#4-3-编辑-zx-hexo-目录下的-config-yml-文件-将theme的值改为maupassant" class="headerlink" title="4.3 编辑 zx-hexo 目录下的 _config.yml 文件, 将theme的值改为maupassant"></a>4.3 编辑 zx-hexo 目录下的 _config.yml 文件, 将theme的值改为maupassant</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: maupassant</span><br></pre></td></tr></table></figure>
-<h2 id="4-4-依次执行命令"><a href="#4-4-依次执行命令" class="headerlink" title="4.4 依次执行命令"></a>4.4 依次执行命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g </span><br><span class="line">hexo d </span><br></pre></td></tr></table></figure>
-<h2 id="4-5-再次在浏览器中输入对应域名-即可发现主题已更换-可能会有几分钟延迟"><a href="#4-5-再次在浏览器中输入对应域名-即可发现主题已更换-可能会有几分钟延迟" class="headerlink" title="4.5 再次在浏览器中输入对应域名, 即可发现主题已更换(可能会有几分钟延迟)"></a>4.5 再次在浏览器中输入对应域名, 即可发现主题已更换(可能会有几分钟延迟)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;abc.github.io</span><br></pre></td></tr></table></figure>
+        采用简约大方的扁平化Hexo-Quiet主题
+        
+          <p class="article-more-link">
+            <a href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckipoiqf20002u01whsnpaxhi" data-title="hexo+github创建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="ckipp1d6j00052r1westr6wyb" data-title="hexo+github搭建个人博客" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Quiet/" rel="tag">Quiet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag">主题</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9D%99%E6%80%81%E4%B8%BB%E9%A2%98/" rel="tag">静态主题</a></li></ul>
+
     </footer>
   </div>
   
@@ -164,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/15/My-New-Post/" data-id="ckipoiqeu0000u01wgksjg7ry" data-title="My New Post" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/15/My-New-Post/" data-id="ckipp1d6h00032r1w3k226adu" data-title="My New Post" class="article-share-link">Share</a>
       
       
       
@@ -199,23 +181,23 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/15/hello-world/" data-id="ckipoiqez0001u01wfw7i1f8t" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/15/hello-world/" data-id="ckipp1d6b00012r1wfbxm3d4m" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -234,12 +216,33 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/">项目案例</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Quiet/" rel="tag">Quiet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%99%E6%80%81%E4%B8%BB%E9%A2%98/" rel="tag">静态主题</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Quiet/" style="font-size: 10px;">Quiet</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 10px;">主题</a> <a href="/tags/%E9%9D%99%E6%80%81%E4%B8%BB%E9%A2%98/" style="font-size: 10px;">静态主题</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -258,7 +261,7 @@
       <ul>
         
           <li>
-            <a href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo+github创建个人博客</a>
+            <a href="/2020/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo+github搭建个人博客</a>
           </li>
         
           <li>
