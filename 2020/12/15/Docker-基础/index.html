@@ -278,14 +278,58 @@
                 </svg>
                 
                 <span> <a href="">宇</a></span>
-                <p>2020-12-15 17:06:36</p>
+                <p>2020-12-15 17:06:00</p>
             </div>
         </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        
+        <h1 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h1><ol>
+<li><p>查看所有镜像<br><code>docker images</code></p>
+</li>
+<li><p>查看容器<br><code>docker ps</code><br>正在运行的容器<br><code>docker ps -a </code><br>所有容器</p>
+</li>
+<li><p>搜索镜像<br> <code>docker search</code><br> <code>docker search nginx</code></p>
+</li>
+<li><p>删除<br> <code>docker rm [容器id]|[容器名称]</code>  删除容器<br> <code>docker rmi [镜像id]|[镜像名:tag]</code>删除镜像</p>
+</li>
+<li><p>docker命令<br> <code>systemctl start docker</code>启动docker<br> <code>systemctl restart docker</code><br> <code>sudo service docker restart</code><br> <code>systemctl stop docker</code><br> <code>service docker stop</code><br> 关闭docker</p>
+</li>
+<li><p>容器启动日志<br> <code>docker logs [容器id]|[容器名]</code></p>
+</li>
+<li><p>查看容器信息<br> <code>docker inspect [容器id]|[容器名]</code></p>
+</li>
+<li><p>dockerfile生成镜像<br> <code>docker build --tag xxx .</code></p>
+</li>
+<li><p>启动容器<br> <code>docker run -d --restart=always --name=nginx -p 80:80 nginx</code></p>
+<ul>
+<li>-t 为容器重新分配一个伪输入终端</li>
+<li>-d 后台运行并返回容器id</li>
+<li>-i 以交互模式运行，通常与-t同时使用</li>
+<li>–restart 重启策略，不指定restart时，docker启动后不会自动重启容器  <ul>
+<li>always 容器退出时重启  </li>
+<li>on-failure 容器非正常退出时重启  </li>
+<li>on-failure:3 容器非正常退出时重启，最多重启3次  </li>
+<li>unless-stopped 容器退出时重启，但是Docker守护进程启动时就停止的容器不重启<br><code>docker inspect -f &quot;&#123;&#123; .RestartCount &#125;&#125;&quot; nginx</code>查看容器重启次数<br><code>docker inspect -f &quot;&#123;&#123; .State.StartedAt &#125;&#125;&quot; nginx</code>查看容器最后一次启动时间</li>
+</ul>
+</li>
+<li>–name 指定容器运行的名称</li>
+<li>-p 端口映射，容器内部端口映射到主机的端口</li>
+<li>–dns 指定容器使用的dns服务器，默认和宿主一致</li>
+<li>–volume 挂载<ul>
+<li>-v /test:/soft<br>容器目录挂载到宿主机目录，：前为宿主机目录</li>
+</ul>
+</li>
+<li>-e 环境变量<ul>
+<li>-e username=”xxx”</li>
+</ul>
+</li>
+</ul>
+<h6 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h6><p><code>docker run -d --name nginx -p 80:80 nginx:latest</code><br>使用nginx:latest镜像后台运行一个容器，容器名为nginx，映射ip为80<br><code>docker run -d -p 80:80 -v /data:/data nginx:latest</code><br>使用nginx:latest镜像运行一个后台容器，并挂载容器的data目录到宿主机的data目录<br><code>docker run -it /bin/bash</code><br>使用nginx:latest镜像前台运行容器，在容器内部执行/bin/bash命令</p>
+<figure class="highlight crystal"><table><tr><td class="code"><pre><code class="hljs crystal">docker run -d \<br>     --name anpy-postgres \<br>     --network host \<br>     -e POSTGRES_USER=postgres \<br>     -e POSTGRES_PASSWORD=XXX \<br>     -e PGDATA=<span class="hljs-regexp">/var/lib</span><span class="hljs-regexp">/postgresql/data</span><span class="hljs-regexp">/pgdata \</span><br><span class="hljs-regexp">     -v /home</span><span class="hljs-regexp">/anpy/anpy</span><span class="hljs-symbol">_pg_data:</span>/var/<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">postgresql</span>/<span class="hljs-title">data</span> \</span><br>     postgres <br></code></pre></td></tr></table></figure></li>
+</ol>
+
     </div>
 </div>
 <style>
@@ -314,19 +358,19 @@
 </script>
 <div class="Last-Next">
     
-    <a href="/2020/12/15/Docker-Dockerfile/">
+    <a href="/2020/12/15/Flutter-%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/">
         <div class="last">
             <span>上一篇</span>
-            <p>Docker Dockerfile</p>
+            <p>Flutter 点击事件</p>
         </div>
     </a>
     
 
     
-    <a href="/2020/12/15/Flutter-%E5%9F%BA%E7%A1%80/">
+    <a href="/2020/12/15/Flutter%E4%B8%8EAndroid%E9%80%9A%E4%BF%A1/">
         <div class="next">
             <span>下一篇</span>
-            <p>Flutter 基础</p>
+            <p>Flutter与Android通信</p>
         </div>
     </a>
     
