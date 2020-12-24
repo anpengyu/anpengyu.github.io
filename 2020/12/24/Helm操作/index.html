@@ -3,14 +3,14 @@
 
 	<head>
 		
-<title>hexo主题-</title>
+<title>Helm操作-</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
 
 
-<meta name="keywords" content="Hexo,Quiet,主题,静态主题,">
+<meta name="keywords" content="部署,k8s,k3s,">
 <meta name="description" content="">
 
 
@@ -259,17 +259,15 @@
         <ul class="tag">
             
             
-            <li><a href="/tags/Hexo">Hexo</a></li>
+            <li><a href="/tags/部署">部署</a></li>
             
-            <li><a href="/tags/Quiet">Quiet</a></li>
+            <li><a href="/tags/k8s">k8s</a></li>
             
-            <li><a href="/tags/主题">主题</a></li>
-            
-            <li><a href="/tags/静态主题">静态主题</a></li>
+            <li><a href="/tags/k3s">k3s</a></li>
             
             
         </ul>
-        <h1>hexo主题</h1>
+        <h1>Helm操作</h1>
         <div class="article-info">
             <div class="article-author">
                 
@@ -282,54 +280,32 @@
                 </svg>
                 
                 <span> <a href="">宇</a></span>
-                <p>2020-12-15 16:14:12</p>
+                <p>2020-12-24 14:40:00</p>
             </div>
         </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <p><a target="_blank" rel="noopener" href="https://github.com/QiaoBug/hexo-theme-quiet">转载：https://github.com/QiaoBug/hexo-theme-quiet</a></p>
-<h1 id="我们首先下载主题"><a href="#我们首先下载主题" class="headerlink" title="我们首先下载主题"></a>我们首先下载主题</h1><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">$ git clone https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/QiaoBug/</span>hexo-theme-quiet.git<br></code></pre></td></tr></table></figure>
-<p>然后我们修改Hexo根目录下的 _config.yml 文件启用 Quiet 主题：</p>
-<p>（大概在最后的位置 — 你需要将下载下来主题文件放在 themes里面并且将名字修改为 Quiet ）</p>
-<figure class="highlight less"><table><tr><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">theme</span>: Quiet<br></code></pre></td></tr></table></figure>
-<p>建议将每页展示的文章数量设置为 每页9篇</p>
-<figure class="highlight less"><table><tr><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">index_generator</span>:<br>  <span class="hljs-attribute">path</span>: <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attribute">per_page</span>: <span class="hljs-number">9</span><br>  <span class="hljs-attribute">order_by</span>: -date<br></code></pre></td></tr></table></figure>
-<p>将下面此项设置为跟我一样即可显示文章的代码高亮</p>
-<h1 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span> <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attr">wrap:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">prismjs:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">preprocess:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span> <span class="hljs-string">&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
-<h2 id="🔧标签页"><a href="#🔧标签页" class="headerlink" title="🔧标签页"></a>🔧标签页</h2><p>进入根目录下的source文件夹下创建tag文件夹新建index.md文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">tags</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-09-19 16:19:22</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;tags&quot;</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">79bk.cn</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-<h2 id="🏂简介页"><a href="#🏂简介页" class="headerlink" title="🏂简介页"></a>🏂简介页</h2><p>进入根目录下的source文件夹下创建about文件夹新建index.md文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">个人简介</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-11-03</span><br><span class="hljs-attr">aubot:</span> <span class="hljs-string">Cange-Q</span><br><span class="hljs-attr">portrait:</span> <span class="hljs-string">&#x27;https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgIMG_7327.jpeg&#x27;</span><br><span class="hljs-attr">describe:</span> <span class="hljs-string">&#x27;一个阳光快乐的BOY,在正合适的年龄里希望遇见正好的你。&#x27;</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">&quot;about&quot;</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;about&quot;</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">79bk.cn</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-<p>解释</p>
-<p>aubot ：博主名称显示在 About 页面的最上面</p>
-<p>portrait ：头像</p>
-<p>describe ：简介（简短的描述下你自己）</p>
-<p>其他的不需要修改</p>
-<p>内容</p>
-<p>在简介页面你可以写很多的东西 你可以向写文章一样去写你的简介</p>
-<p>你只需将内容写在 about文件夹下index.md文件里面</p>
-<h2 id="🎉友情链接"><a href="#🎉友情链接" class="headerlink" title="🎉友情链接"></a>🎉友情链接</h2><p>进入根目录下的source文件夹下创建links文件夹新建index.md文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">友情链接</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-09-19</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">&quot;links&quot;</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;links&quot;</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">79bk.cn</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-<p>内容</p>
-<p>你可能需要描述你的友情链接 那么你就需要将你想要描述的内容写在links文件夹下的index.md文件内</p>
-<p>你会发现和 简介页 内容写法是一样的</p>
-<h2 id="🎪分类页"><a href="#🎪分类页" class="headerlink" title="🎪分类页"></a>🎪分类页</h2><p>进入根目录下的source文件夹下创建categories文件夹新建index.md文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章分类</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-11-02</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">categories</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">categories</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">79bk.cn</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-<h2 id="📖发布文章"><a href="#📖发布文章" class="headerlink" title="📖发布文章"></a>📖发布文章</h2><p>你需要在发布文章的时候写标头</p>
-<figure class="highlight subunit"><table><tr><td class="code"><pre><code class="hljs subunit">title: 一个简约扁平化的Hexo静态主题博客-Quiet<br>categories: 项目案例<br><span class="hljs-keyword">tags:</span><br>  - Hexo<br>  - Quiet<br>  - 主题<br>  - 静态主题<br>excerpt: 采用简约大方的扁平化Hexo-Quiet主题<br>date: 2020<span class="hljs-string">-11</span><span class="hljs-string">-03</span> 20:33:36<br>cover: &#x27;https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgQuietView.png&#x27;<br></code></pre></td></tr></table></figure>
-<p>解释</p>
-<p>title：文章标题</p>
-<p>categories：分类（最好只写一个）</p>
-<p>tags：标签可以多个</p>
-<p>excerpt：描述</p>
-<p>date：创建日期</p>
-<p>cover：缩略图（你不填就用默认的了）</p>
-<p>🏆主题配置<br>我们进入主题根目录下的themes文件夹下的Quiet文件里面的_config.yml配置文件</p>
-<p>我们可以在里面 设置网站的标题,各种Logo图标</p>
-<p>添加友情链接</p>
-<p>在此配置文件中有个 linksList 我们可以仿照着去添加你的友情链接</p>
+        <p>环境：centos 8</p>
+<h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><p>helm是基于kubernetes的包管理器</p>
+<ul>
+<li>chart<br>创建一个应用的信息集合，包括各种kubernetes对象配置的模板、参数定义、依赖关系、文档说明等，可以将chart想象成yum中的软件安装包</li>
+<li>release<br>是chart的运行实例，代表一个正在运行的应用。当chart被安装到kubernetes集群，就会生成一个release，只会有一个release。</li>
+</ul>
+<h5 id="安装helm"><a href="#安装helm" class="headerlink" title="安装helm"></a>安装helm</h5><ol>
+<li>下载<br><code>wget https://get.helm.sh/helm-v3.1.0-linux-amd64.tar.gz</code>  </li>
+<li>解压<br><code>tar -zxvf helm-v3.2.0-linux-amd64.tar.gz</code>  </li>
+<li>拷贝<br><code>cp linux-amd64/helm /usr/local/bin</code></li>
+<li>验证<br><img src="/images/helm-page1.png" alt="upload successful"></li>
+</ol>
+<h5 id="添加chart源"><a href="#添加chart源" class="headerlink" title="添加chart源"></a>添加chart源</h5><figure class="highlight vim"><table><tr><td class="code"><pre><code class="hljs vim"><span class="hljs-number">1</span>. helm repo <span class="hljs-built_in">add</span>  stable http<span class="hljs-variable">s:</span>//kubernetes-charts.storage.googleapis.<span class="hljs-keyword">com</span><br><span class="hljs-number">2</span>. helm repo <span class="hljs-built_in">add</span>  aliyuncs http<span class="hljs-variable">s:</span>//apphub.aliyuncs.<span class="hljs-keyword">com</span><br><span class="hljs-number">3</span>. helm repo <span class="hljs-built_in">add</span> cetic http<span class="hljs-variable">s:</span>//cetic.github.io/helm-charts<br></code></pre></td></tr></table></figure>
+<p>添加之后更新<br><code>helm repo update</code><br>查看chart源<br><code>helm repo list</code><br>查询某个库有哪些安装程序<br><code>helm search repo aliyuncs  | head -5</code><br>查找安装程序<br><code>helm search repo nginx</code></p>
+<h6 id="安装程序"><a href="#安装程序" class="headerlink" title="安装程序"></a>安装程序</h6><p>搜索<br><code>helm search repo adminer</code><br>安装<br><code>helm install adminer cetic/adminer</code><br>查看service<br><code>kubectl get svc -n default</code><br>Service(简称svc)定义了Pod的逻辑集合和访问该集合的策略，是真实服务的抽象<br>删除一个应用<br><code>helm uninstall nginx</code></p>
+<h5 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h5><ul>
+<li>kubernetes cluster unreachable<br><code>export KUBECONFIG=/etc/rancher/k3s/k3s.yaml</code></li>
+<li> could not connect to server: Host is unreachable Is the server running on host “192.168.12.168” and accepting TCP/IP connections on port 5432?<br>关闭服务器防火墙</li>
+</ul>
 
     </div>
 </div>
@@ -359,19 +335,12 @@
 </script>
 <div class="Last-Next">
     
-    <a href="/2020/12/15/%E7%BD%91%E7%AB%99%E6%94%B6%E9%9B%86/">
-        <div class="last">
-            <span>上一篇</span>
-            <p>网站收集</p>
-        </div>
-    </a>
-    
 
     
-    <a href="/2020/12/15/hexo-admin%E5%90%8E%E5%8F%B0/">
+    <a href="/2020/12/23/centos-%E5%91%BD%E4%BB%A4/">
         <div class="next">
             <span>下一篇</span>
-            <p>hexo admin后台</p>
+            <p>centos 命令</p>
         </div>
     </a>
     
